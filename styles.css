@@ -736,6 +736,9 @@ main a:not(.btn):not(.project-card):hover {
     margin: 0 auto;
     width: max-content;
   }
+  .kicker {
+    display: none;
+  }
 }
 
 /* =========================
