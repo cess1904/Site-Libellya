@@ -538,9 +538,6 @@ main a:not(.btn):not(.project-card):hover {
    07 — HERO (DARK)
    ========================= */
 .hero {
-
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
   padding: 120px 0 110px;
   color: #fff;
   background:
@@ -716,24 +713,40 @@ main a:not(.btn):not(.project-card):hover {
   .hero {
     padding: 90px 0 70px;
   }
+
   .hero__title {
     margin-top: 28px;
     text-align: center;
+    font-size: clamp(30px, 10vw, 46px);
   }
+
   .lead {
     margin-bottom: 28px;
     font-size: 17px;
   }
+
   .hero-words {
     display: block;
     width: 100%;
     text-align: center;
   }
+
+  /* réserve la place pour l'animation */
+  .hero-words::before {
+    content: "déclenche des contacts";
+    visibility: hidden;
+    white-space: normal;
+  }
+
+  /* mots animés */
   .hero-words .word {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: normal;
+    max-width: 92vw;
+    text-align: center;
+    font-size: clamp(26px, 9vw, 40px);
+    line-height: 1.02;
   }
 }
 
