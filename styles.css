@@ -121,7 +121,7 @@ a {
   color: var(--muted);
 }
 
-/* Petite règle utile : ancres pas cachées par le header sticky */
+/* ancres pas cachées par le header sticky */
 section[id] {
   scroll-margin-top: 90px;
 }
@@ -1862,4 +1862,26 @@ main a:not(.btn):not(.project-card):hover {
     transform: none !important;
     transition: none !important;
   }
+}
+
+
+/* Empêche tout débordement horizontal */
+html, body {
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+}
+
+/* Correction logo mobile */
+@media (max-width: 520px) {
+
+  .logo__tagline {
+    display: none; /* trop long pour mobile */
+  }
+
+  .logo__text {
+    white-space: normal;
+  }
+
 }
