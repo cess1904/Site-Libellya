@@ -573,7 +573,9 @@ main a:not(.btn):not(.project-card):hover {
 
 .kicker {
   display: inline-block;
-  max-width: 100%;
+  max-width: min(92vw, 42ch);
+  text-wrap: balance;
+  line-height: 1.35;
   white-space: normal;
   color: rgba(255, 255, 255, 0.92);
   background: rgba(255, 255, 255, 0.08);
