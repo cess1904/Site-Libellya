@@ -66,6 +66,7 @@ html:focus-within {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family:
     ui-sans-serif,
     system-ui,
@@ -468,6 +469,13 @@ main a:not(.btn):not(.project-card):hover {
     color: #fff;
     border: 1px solid var(--mint-600);
   }
+  .logo__tagline {
+    display: none;
+  }
+
+  .logo__text {
+    white-space: normal;
+  }
 }
 @media (max-width: 820px) and (hover: hover) {
   .menu__inner .btn--primary:hover {
@@ -565,6 +573,8 @@ main a:not(.btn):not(.project-card):hover {
 
 .kicker {
   display: inline-block;
+  max-width: 100%;
+  white-space: normal;
   color: rgba(255, 255, 255, 0.92);
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -581,6 +591,7 @@ main a:not(.btn):not(.project-card):hover {
   line-height: 1.08;
   font-weight: 950;
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 .hero__intro {
@@ -700,7 +711,7 @@ main a:not(.btn):not(.project-card):hover {
 /* Responsive hero */
 @media (max-width: 768px) {
   .hero {
-    padding: 110px 0 92px;
+    padding: 90px 0 70px;
   }
   .hero__title {
     margin-top: 28px;
@@ -1862,26 +1873,4 @@ main a:not(.btn):not(.project-card):hover {
     transform: none !important;
     transition: none !important;
   }
-}
-
-
-/* Empêche tout débordement horizontal */
-html, body {
-  overflow-x: hidden;
-}
-.header {
-  width: 100%;
-}
-
-/* Correction logo mobile */
-@media (max-width: 520px) {
-
-  .logo__tagline {
-    display: none; /* trop long pour mobile */
-  }
-
-  .logo__text {
-    white-space: normal;
-  }
-
 }
