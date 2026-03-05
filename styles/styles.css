@@ -225,7 +225,7 @@ main a:not(.btn):not(.project-card):hover {
    05 — HEADER / NAV / BURGER
    ========================= */
 .header {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 50;
   background: rgba(247, 250, 249, 0.88);
@@ -239,6 +239,15 @@ main a:not(.btn):not(.project-card):hover {
   justify-content: space-between;
   padding: 16px 0;
   gap: 16px;
+}
+/*pour que le header soit magantique */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.site-header > .header{
+  position: relative; /* laisse la gestion sticky au wrapper */
 }
 
 /* Logo */
@@ -469,9 +478,10 @@ main a:not(.btn):not(.project-card):hover {
     color: #fff;
     border: 1px solid var(--mint-600);
   }
+  /* a voir si je lenleve si sa bug sur le telephone 
   .logo__tagline {
     display: none;
-  }
+  } */
 
   .logo__text {
     white-space: normal;
