@@ -731,23 +731,30 @@ main a:not(.btn):not(.project-card):hover {
     text-align: center;
   }
 
-  /* réserve la place pour l'animation */
   .hero-words::before {
-    content: "déclenche des contacts";
-    visibility: hidden;
-    white-space: normal;
-  }
+  content: "déclenche des contacts";
+  visibility: hidden;
+  white-space: normal;
+  display: block;
+  max-width: 14ch;     /* ✅ même largeur que le mot animé */
+  margin: 0 auto;
+}
 
   /* mots animés */
   .hero-words .word {
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: normal;
-    max-width: 92vw;
-    text-align: center;
-    font-size: clamp(26px, 9vw, 40px);
-    line-height: 1.02;
-  }
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: normal;
+  text-align: center;
+
+  font-size: clamp(26px, 9vw, 40px);
+  line-height: 1.02;
+
+  max-width: 14ch;      /* ✅ limite à ~2 lignes */
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+}
 }
 
 /* =========================
