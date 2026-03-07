@@ -241,12 +241,12 @@ main a:not(.btn):not(.project-card):hover {
   gap: 16px;
 }
 /*pour que le header soit magantique */
-.site-header{
+.site-header {
   position: sticky;
   top: 0;
   z-index: 999;
 }
-.site-header > .header{
+.site-header > .header {
   position: relative; /* laisse la gestion sticky au wrapper */
 }
 
@@ -729,13 +729,13 @@ main a:not(.btn):not(.project-card):hover {
     text-align: center;
     font-size: clamp(30px, 10vw, 46px);
     line-height: 1.05;
-      line-height: 0.98;
+    line-height: 0.98;
   }
 
   .hero__intro {
-  display: inline-block;
-  margin-right: 0.12em;
-  margin-bottom: 0;
+    display: inline-block;
+    margin-right: 0.12em;
+    margin-bottom: 0;
   }
 
   .lead {
@@ -750,7 +750,7 @@ main a:not(.btn):not(.project-card):hover {
   }
 
   .hero-words::before {
-    content: "déclenche des contacts";
+    content: 'déclenche des contacts';
     visibility: hidden;
     display: block;
     white-space: normal;
@@ -769,7 +769,6 @@ main a:not(.btn):not(.project-card):hover {
     font-size: clamp(26px, 9vw, 40px);
     line-height: 1.02;
     max-width: 14ch;
-    width: 100%;
     transform: translateX(-50%);
     animation: wordFadeMobile 6s ease-in-out infinite;
   }
