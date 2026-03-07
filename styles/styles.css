@@ -728,6 +728,14 @@ main a:not(.btn):not(.project-card):hover {
     margin-top: 28px;
     text-align: center;
     font-size: clamp(30px, 10vw, 46px);
+    line-height: 1.05;
+      line-height: 0.98;
+  }
+
+  .hero__intro {
+  display: inline-block;
+  margin-right: 0.12em;
+  margin-bottom: 0;
   }
 
   .lead {
@@ -742,29 +750,60 @@ main a:not(.btn):not(.project-card):hover {
   }
 
   .hero-words::before {
-  content: "déclenche des contacts";
-  visibility: hidden;
-  white-space: normal;
-  display: block;
-  max-width: 14ch;     /* ✅ même largeur que le mot animé */
-  margin: 0 auto;
-}
+    content: "déclenche des contacts";
+    visibility: hidden;
+    display: block;
+    white-space: normal;
+    max-width: 14ch;
+    margin: 0 auto;
+    line-height: 1.02;
+    font-size: clamp(26px, 9vw, 40px);
+  }
 
-  /* mots animés */
   .hero-words .word {
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: normal;
-  text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    white-space: normal;
+    text-align: center;
+    font-size: clamp(26px, 9vw, 40px);
+    line-height: 1.02;
+    max-width: 14ch;
+    width: 100%;
+    transform: translateX(-50%);
+    animation: wordFadeMobile 6s ease-in-out infinite;
+  }
 
-  font-size: clamp(26px, 9vw, 40px);
-  line-height: 1.02;
+  .hero-words .word-1 {
+    animation-delay: 0s;
+  }
 
-  max-width: 14ch;      /* ✅ limite à ~2 lignes */
-  hyphens: none;
-  word-break: normal;
-  overflow-wrap: normal;
+  .hero-words .word-2 {
+    animation-delay: 3s;
+  }
 }
+
+@keyframes wordFadeMobile {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(6px);
+  }
+  12% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  42% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  54% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-6px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-6px);
+  }
 }
 
 /* =========================
