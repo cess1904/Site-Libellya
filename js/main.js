@@ -12,7 +12,7 @@
 
 // Helpers
 const isClickOutside = (event, elements = []) =>
-  !elements.some((el) => el && el.contains(event.target));
+  !elements.some((el) => el && el.contains(event.target))
 
 // =========================
 // HEADER + FOOTER UI
@@ -22,184 +22,188 @@ function initHeaderAndFooterUI() {
   // =========================
   // Burger menu
   // =========================
-  const burger = document.querySelector(".burger");
-  const menu = document.querySelector("#menu");
+  const burger = document.querySelector('.burger')
+  const menu = document.querySelector('#menu')
 
   function closeBurgerMenu() {
-    if (!burger || !menu) return;
-    burger.setAttribute("aria-expanded", "false");
-    menu.hidden = true;
+    if (!burger || !menu) return
+    burger.setAttribute('aria-expanded', 'false')
+    menu.hidden = true
   }
 
   function toggleBurgerMenu() {
-    if (!burger || !menu) return;
-    const isOpen = burger.getAttribute("aria-expanded") === "true";
-    burger.setAttribute("aria-expanded", String(!isOpen));
-    menu.hidden = isOpen;
+    if (!burger || !menu) return
+    const isOpen = burger.getAttribute('aria-expanded') === 'true'
+    burger.setAttribute('aria-expanded', String(!isOpen))
+    menu.hidden = isOpen
   }
 
   if (burger && menu) {
-    burger.addEventListener("click", toggleBurgerMenu);
+    burger.addEventListener('click', toggleBurgerMenu)
 
     // Ferme le menu quand on clique un lien
-    menu.addEventListener("click", (e) => {
-      const target = e.target;
-      if (target && target.matches("a")) closeBurgerMenu();
-    });
+    menu.addEventListener('click', (e) => {
+      const target = e.target
+      if (target && target.matches('a')) closeBurgerMenu()
+    })
 
     // Ferme si clic en dehors
-    document.addEventListener("click", (e) => {
-      if (!menu.hidden && isClickOutside(e, [menu, burger])) closeBurgerMenu();
-    });
+    document.addEventListener('click', (e) => {
+      if (!menu.hidden && isClickOutside(e, [menu, burger])) closeBurgerMenu()
+    })
 
     // Ferme avec ESC
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeBurgerMenu();
-    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeBurgerMenu()
+    })
   }
 
   // =========================
   // Dropdown Services
   // (tu en as 2 dans ton header : desktop + menu mobile)
   // =========================
-  const dropdowns = document.querySelectorAll(".nav__dropdown");
+  const dropdowns = document.querySelectorAll('.nav__dropdown')
 
   dropdowns.forEach((wrap) => {
-    const btn = wrap.querySelector(".nav__dropbtn");
-    const content = wrap.querySelector(".nav__dropdown-content");
-    if (!btn || !content) return;
+    const btn = wrap.querySelector('.nav__dropbtn')
+    const content = wrap.querySelector('.nav__dropdown-content')
+    if (!btn || !content) return
 
     function close() {
-      btn.setAttribute("aria-expanded", "false");
-      content.style.display = "";
+      btn.setAttribute('aria-expanded', 'false')
+      content.style.display = ''
     }
 
     function open() {
-      btn.setAttribute("aria-expanded", "true");
-      content.style.display = "block";
+      btn.setAttribute('aria-expanded', 'true')
+      content.style.display = 'block'
     }
 
     function toggle() {
-      const expanded = btn.getAttribute("aria-expanded") === "true";
-      expanded ? close() : open();
+      const expanded = btn.getAttribute('aria-expanded') === 'true'
+      expanded ? close() : open()
     }
 
     // Clic pour ouvrir/fermer
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      toggle();
-    });
+    btn.addEventListener('click', (e) => {
+      e.preventDefault()
+      e.stopPropagation()
+      toggle()
+    })
 
     // Clique sur un lien => ferme
-    content.addEventListener("click", (e) => {
-      const target = e.target;
-      if (target && target.matches("a")) close();
-    });
+    content.addEventListener('click', (e) => {
+      const target = e.target
+      if (target && target.matches('a')) close()
+    })
 
     // Clic extérieur => ferme
-    document.addEventListener("click", (e) => {
-      const isOpen = btn.getAttribute("aria-expanded") === "true";
-      if (isOpen && isClickOutside(e, [wrap])) close();
-    });
+    document.addEventListener('click', (e) => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true'
+      if (isOpen && isClickOutside(e, [wrap])) close()
+    })
 
     // ESC => ferme
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") close();
-    });
-  });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close()
+    })
+  })
 
   // =========================
   // Year footer
   // =========================
-  const year = document.querySelector("#year");
-  if (year) year.textContent = new Date().getFullYear();
+  const year = document.querySelector('#year')
+  if (year) year.textContent = new Date().getFullYear()
 }
 
 // ✅ quand les includes (header/footer) sont injectés
-document.addEventListener("includes:loaded", initHeaderAndFooterUI);
+document.addEventListener('includes:loaded', initHeaderAndFooterUI)
 
 // ✅ fallback si une page n’a pas d’include / ou pour éviter les surprises
-document.addEventListener("DOMContentLoaded", initHeaderAndFooterUI);
+document.addEventListener('DOMContentLoaded', initHeaderAndFooterUI)
 
 // =========================
 // Toggle "agenda"
 // =========================
-document.addEventListener("DOMContentLoaded", () => {
-  const agendaBtn = document.querySelector('[data-toggle="agenda"]');
-  const agenda = document.querySelector("#agenda");
+document.addEventListener('DOMContentLoaded', () => {
+  const agendaBtn = document.querySelector('[data-toggle="agenda"]')
+  const agenda = document.querySelector('#agenda')
 
   if (agendaBtn && agenda) {
-    agendaBtn.addEventListener("click", () => {
-      const isHidden = agenda.hidden;
-      agenda.hidden = !isHidden;
+    agendaBtn.addEventListener('click', () => {
+      const isHidden = agenda.hidden
+      agenda.hidden = !isHidden
       agendaBtn.textContent = isHidden
-        ? "Fermer l’option créneau"
-        : "Afficher l’option créneau";
-    });
+        ? 'Fermer l’option créneau'
+        : 'Afficher l’option créneau'
+    })
   }
-});
+})
 
 // =========================
 // SCROLL REVEAL (repeat)
 // =========================
-document.addEventListener("DOMContentLoaded", () => {
-  const items = document.querySelectorAll(".reveal");
-  if (!items.length) return;
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.reveal')
+  if (!items.length) return
 
   const io = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        entry.target.classList.toggle("is-visible", entry.isIntersecting);
-      });
+        entry.target.classList.toggle('is-visible', entry.isIntersecting)
+      })
     },
-    { threshold: 0.18 }
-  );
+    { threshold: 0.18 },
+  )
 
-  items.forEach((el) => io.observe(el));
-});
+  items.forEach((el) => io.observe(el))
+})
 
 // =========================
 // animation du titre (HOME)
 // =========================
-document.addEventListener("DOMContentLoaded", () => {
-  const el = document.getElementById("hero-rotate");
-  if (!el) return; // ✅ évite crash sur pages sans hero (mentions légales etc.)
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.getElementById('hero-rotate')
+  if (!el) return // ✅ évite crash sur pages sans hero (mentions légales etc.)
 
-  const phrases = ["clarifie votre offre", "déclenche des contacts"];
-  let i = 0;
+  const phrases = ['clarifie votre offre', 'déclenche des contacts']
+  let i = 0
 
   setInterval(() => {
-    el.classList.add("hero-fade-out");
+    el.classList.add('hero-fade-out')
 
     setTimeout(() => {
-      i = (i + 1) % phrases.length;
-      el.textContent = phrases[i];
-      el.classList.remove("hero-fade-out");
-      el.classList.add("hero-fade-in");
-    }, 400);
-  }, 3500);
-});
+      i = (i + 1) % phrases.length
+      el.textContent = phrases[i]
+      el.classList.remove('hero-fade-out')
+      el.classList.add('hero-fade-in')
+    }, 400)
+  }, 3500)
+})
 
 // ===== CAROUSEL  =====
 
-const track = document.querySelector('.carousel-track');
-const slides = document.querySelectorAll('.carousel-track img');
+const viewport = document.getElementById('louiseCarousel');
+const slides = viewport.querySelectorAll('.carousel-track img');
 const nextBtn = document.querySelector('.carousel-btn.next');
 const prevBtn = document.querySelector('.carousel-btn.prev');
 
-let index = 0;
-
-function updateCarousel(){
-  track.style.transform = `translateX(-${index * 100}%)`;
+function getScrollAmount() {
+  const slide = slides[0];
+  const gap = 40; // même valeur que ton CSS
+  return slide.offsetWidth + gap;
 }
 
 nextBtn.addEventListener('click', () => {
-  index = (index + 1) % slides.length;
-  updateCarousel();
+  viewport.scrollBy({
+    left: getScrollAmount(),
+    behavior: 'smooth'
+  });
 });
 
 prevBtn.addEventListener('click', () => {
-  index = (index - 1 + slides.length) % slides.length;
-  updateCarousel();
+  viewport.scrollBy({
+    left: -getScrollAmount(),
+    behavior: 'smooth'
+  });
 });
