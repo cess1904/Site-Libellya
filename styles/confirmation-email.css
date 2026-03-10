@@ -1,0 +1,33 @@
+.confirm-page {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.confirm-page__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  background: #d8efec;
+  border: 1px solid #bfdcd7;
+  border-radius: 24px;
+  padding: 40px 24px;
+}
+
+.confirm-page h1 {
+  margin: 12px 0 18px;
+  color: var(--mint-600);
+}
+
+.confirm-page p {
+  margin: 0 0 14px;
+  color: #1f2a28;
+}
+
+.confirm-page__note {
+  color: #5f6f6b;
+  font-size: 0.95rem;
+}
+
+.confirm-page .btn {
+  margin-top: 12px;
+}
