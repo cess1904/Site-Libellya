@@ -14,7 +14,77 @@
     <meta name="robots" content="index, follow" />
 
     <!--styles-->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!-- START - We recommend to place the below code in head tag of your website html  -->
+    <style>
+      @font-face {
+        font-display: block;
+        font-family: Roboto;
+        src:
+          url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2)
+            format('woff2'),
+          url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff)
+            format('woff');
+      }
+
+      @font-face {
+        font-display: fallback;
+        font-family: Roboto;
+        font-weight: 600;
+        src:
+          url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2)
+            format('woff2'),
+          url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff)
+            format('woff');
+      }
+
+      @font-face {
+        font-display: fallback;
+        font-family: Roboto;
+        font-weight: 700;
+        src:
+          url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2)
+            format('woff2'),
+          url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff)
+            format('woff');
+      }
+
+      #sib-container input:-ms-input-placeholder {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        color: #5f6f6b;
+      }
+
+      #sib-container input::placeholder {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        color: #5f6f6b;
+      }
+
+      #sib-container textarea::placeholder {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        color: #5f6f6b;
+      }
+
+      #sib-container a {
+        text-decoration: underline;
+        color: #9cd1ca;
+      }
+
+      @media (max-width: 768px) {
+        #sib-container label[for='SUJET'] {
+          font-size: 15px !important;
+          line-height: 1.35;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+    />
+    <!--  END - We recommend to place the above code in head tag of your website html -->
 
     <script type="application/ld+json">
       {
@@ -247,7 +317,7 @@
                 href="realisations/louise-nomad-bar-site-web.html"
                 class="project-row__image"
                 style="
-                  --bg: url(/assets/realisations/assets-louise-nomad-bar/louise-nomad-bar-site.webp);
+                  --bg: url(/assets/realisations/assets-louise-nomad-bar/louise-nomad-bar-site-accueil.webp);
                 "
                 aria-label="Découvrir le projet Louise Nomad Bar"
               ></a>
@@ -309,24 +379,45 @@
         </div>
       </section>
 
-      <!-- Bloc SEO -->
       <section class="section section--seo-dark reveal">
-        <div class="container">
+        <div class="container seo-dark-grid">
           <header class="section__head">
-            <h2>Création de sites web sur mesure</h2>
+            <h2>Un site pensé pour mettre votre activité en valeur</h2>
+
             <p>
               Votre site web est souvent la première impression que l’on se fait
-              de votre activité. Il ne doit pas seulement être joli : il doit
-              aussi donner confiance, mettre en valeur ce que vous faites et
-              donner envie de vous contacter.
+              de votre activité. Il doit inspirer confiance, mettre en valeur ce
+              que vous faites et donner envie de vous contacter.
             </p>
+
             <p>
-              Chaque projet est pensé sur mesure, avec une attention
-              particulière portée à la clarté, au design, à l’expérience
-              utilisateur et à la visibilité, pour créer un site professionnel,
-              agréable à parcourir et réellement utile pour votre activité.
+              Chaque projet est conçu sur mesure, pour créer un site clair,
+              soigné, agréable à parcourir et vraiment utile pour votre
+              activité.
             </p>
           </header>
+
+          <div class="seo-dark-cards">
+            <article class="seo-card">
+              <strong>Clarté</strong>
+              <p>un site facile à comprendre</p>
+            </article>
+
+            <article class="seo-card">
+              <strong>Confiance</strong>
+              <p>Une image plus rassurante</p>
+            </article>
+
+            <article class="seo-card">
+              <strong>Visibilité</strong>
+              <p>une base solide pour Google</p>
+            </article>
+
+            <article class="seo-card">
+              <strong>Contact</strong>
+              <p>Des prises de contact facilitées</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -472,235 +563,375 @@
           <div class="contact">
             <div class="form form--embed" aria-label="Formulaire de contact">
               <div class="embed-placeholder">
-               <!-- Begin Brevo Form -->
-<!-- START - We recommend to place the below code in head tag of your website html  -->
-<style>
-  @font-face {
-    font-display: block;
-    font-family: Roboto;
-    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
-  }
+                <!-- Begin Brevo Form -->
 
-  @font-face {
-    font-display: fallback;
-    font-family: Roboto;
-    font-weight: 600;
-    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
-  }
-
-  @font-face {
-    font-display: fallback;
-    font-family: Roboto;
-    font-weight: 700;
-    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
-  }
-
-  #sib-container input:-ms-input-placeholder {
-    text-align: left;
-    font-family: Helvetica, sans-serif;
-    color: #5f6f6b;
-  }
-
-  #sib-container input::placeholder {
-    text-align: left;
-    font-family: Helvetica, sans-serif;
-    color: #5f6f6b;
-  }
-
-  #sib-container textarea::placeholder {
-    text-align: left;
-    font-family: Helvetica, sans-serif;
-    color: #5f6f6b;
-  }
-
-  #sib-container a {
-    text-decoration: underline;
-    color: #9cd1ca;
-  }
-</style>
-<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-<!--  END - We recommend to place the above code in head tag of your website html -->
-
-<!-- START - We recommend to place the below code where you want the form in your website html  -->
-<div class="sib-form" style="text-align: center;
-         background-color: transparent;                                 ">
-  <div id="sib-form-container" class="sib-form-container">
-    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-        </svg>
-        <span class="sib-form-message-panel__inner-text">
-                          Une erreur est survenue. Merci de réessayer dans un instant.
-                      </span>
-      </div>
-    </div>
-    <div></div>
-    <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-        </svg>
-        <span class="sib-form-message-panel__inner-text">
+                <!-- START - We recommend to place the below code where you want the form in your website html  -->
+                <div
+                  class="sib-form"
+                  style="text-align: center; background-color: transparent"
+                >
+                  <div id="sib-form-container" class="sib-form-container">
+                    <div
+                      id="error-message"
+                      class="sib-form-message-panel"
+                      style="
+                        font-size: 16px;
+                        text-align: left;
+                        font-family: Helvetica, sans-serif;
+                        color: #661d1d;
+                        background-color: #ffeded;
+                        border-radius: 3px;
+                        border-color: #ff4949;
+                        max-width: 540px;
+                      "
+                    >
+                      <div
+                        class="sib-form-message-panel__text sib-form-message-panel__text--center"
+                      >
+                        <svg
+                          viewBox="0 0 512 512"
+                          class="sib-icon sib-notification__icon"
+                        >
+                          <path
+                            d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+                          />
+                        </svg>
+                        <span class="sib-form-message-panel__inner-text">
+                          Une erreur est survenue. Merci de réessayer dans un
+                          instant.
+                        </span>
+                      </div>
+                    </div>
+                    <div></div>
+                    <div
+                      id="success-message"
+                      class="sib-form-message-panel"
+                      style="
+                        font-size: 16px;
+                        text-align: left;
+                        font-family: Helvetica, sans-serif;
+                        color: #085229;
+                        background-color: #e7faf0;
+                        border-radius: 3px;
+                        border-color: #13ce66;
+                        max-width: 540px;
+                      "
+                    >
+                      <div
+                        class="sib-form-message-panel__text sib-form-message-panel__text--center"
+                      >
+                        <svg
+                          viewBox="0 0 512 512"
+                          class="sib-icon sib-notification__icon"
+                        >
+                          <path
+                            d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+                          />
+                        </svg>
+                        <span class="sib-form-message-panel__inner-text">
                           Votre message a bien été envoyé.
-                      </span>
-      </div>
-    </div>
-    <div></div>
-    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(216,239,236,1); max-width:540px; border-radius:25px; border-width:2px; border-color:#77c4b6; border-style:solid; direction:ltr">
-      <form id="sib-form" method="POST" action="https://2252d02f.sibforms.com/serve/MUIFAOtpff7TGrQg9ozXMoZ5b_nT0PZXdn7ObgNvxgwxmPkz7Qcwm9Z4x26r2mt5abrSFLyeRTuFwXkuWl-9ksYQqbnkpZyMQS9qL6xxcQBLlVdFi7lXSRzx8gls6QYyi-qYO-sG1VadcXhitc8_l6spg_iAaoA9Q-IZSLHiBJcuzY--QlugZmeSkuXlV7m0r_JvwhhU-BwkJkAhMA==" data-type="subscription">
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
+                        </span>
+                      </div>
+                    </div>
+                    <div></div>
+                    <div
+                      id="sib-container"
+                      class="sib-container--large sib-container--vertical"
+                      style="
+                        text-align: center;
+                        background-color: rgba(216, 239, 236, 1);
+                        max-width: 540px;
+                        border-radius: 25px;
+                        border-width: 2px;
+                        border-color: #77c4b6;
+                        border-style: solid;
+                        direction: ltr;
+                      "
+                    >
+                      <form
+                        id="sib-form"
+                        method="POST"
+                        action="https://2252d02f.sibforms.com/serve/MUIFAOtpff7TGrQg9ozXMoZ5b_nT0PZXdn7ObgNvxgwxmPkz7Qcwm9Z4x26r2mt5abrSFLyeRTuFwXkuWl-9ksYQqbnkpZyMQS9qL6xxcQBLlVdFi7lXSRzx8gls6QYyi-qYO-sG1VadcXhitc8_l6spg_iAaoA9Q-IZSLHiBJcuzY--QlugZmeSkuXlV7m0r_JvwhhU-BwkJkAhMA=="
+                        data-type="subscription"
+                      >
+                        <div style="padding: 8px 0">
+                          <div class="sib-input sib-form-block">
+                            <div class="form__entry entry_block">
+                              <div class="form__label-row">
+                                <div class="entry__field">
+                                  <input
+                                    class="input"
+                                    maxlength="200"
+                                    type="text"
+                                    id="NOM"
+                                    name="NOM"
+                                    autocomplete="off"
+                                    placeholder="Nom"
+                                  />
+                                </div>
+                              </div>
 
-                <div class="entry__field">
-                  <input class="input " maxlength="200" type="text" id="NOM" name="NOM" autocomplete="off" placeholder="Nom" />
+                              <label
+                                class="entry__error entry__error--primary"
+                                style="
+                                  font-size: 16px;
+                                  text-align: left;
+                                  font-family: Helvetica, sans-serif;
+                                  color: #661d1d;
+                                  background-color: #ffeded;
+                                  border-radius: 3px;
+                                  border-color: #ff4949;
+                                "
+                              >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding: 8px 0">
+                          <div class="sib-input sib-form-block">
+                            <div class="form__entry entry_block">
+                              <div class="form__label-row">
+                                <div class="entry__field">
+                                  <input
+                                    class="input"
+                                    maxlength="200"
+                                    type="text"
+                                    id="PRENOM"
+                                    name="PRENOM"
+                                    autocomplete="off"
+                                    placeholder="Prénom*"
+                                    data-required="true"
+                                    required
+                                  />
+                                </div>
+                              </div>
+
+                              <label
+                                class="entry__error entry__error--primary"
+                                style="
+                                  font-size: 16px;
+                                  text-align: left;
+                                  font-family: Helvetica, sans-serif;
+                                  color: #661d1d;
+                                  background-color: #ffeded;
+                                  border-radius: 3px;
+                                  border-color: #ff4949;
+                                "
+                              >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding: 8px 0">
+                          <div class="sib-input sib-form-block">
+                            <div class="form__entry entry_block">
+                              <div class="form__label-row">
+                                <div class="entry__field">
+                                  <input
+                                    class="input"
+                                    type="text"
+                                    id="EMAIL"
+                                    name="EMAIL"
+                                    autocomplete="off"
+                                    placeholder="Email*"
+                                    data-required="true"
+                                    required
+                                  />
+                                </div>
+                              </div>
+
+                              <label
+                                class="entry__error entry__error--primary"
+                                style="
+                                  font-size: 16px;
+                                  text-align: left;
+                                  font-family: Helvetica, sans-serif;
+                                  color: #661d1d;
+                                  background-color: #ffeded;
+                                  border-radius: 3px;
+                                  border-color: #ff4949;
+                                "
+                              >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding: 8px 0">
+                          <div class="sib-input sib-form-block">
+                            <div class="form__entry entry_block">
+                              <div class="form__label-row">
+                                <div class="entry__field">
+                                  <input
+                                    maxlength="200"
+                                    type="text"
+                                    data-numeric="true"
+                                    class="input"
+                                    id="TELEPHONE"
+                                    name="TELEPHONE"
+                                    autocomplete="off"
+                                    placeholder="Téléphone"
+                                  />
+                                </div>
+                              </div>
+                              <label
+                                class="entry__error entry__error--primary"
+                                style="
+                                  font-size: 16px;
+                                  text-align: left;
+                                  font-family: Helvetica, sans-serif;
+                                  color: #661d1d;
+                                  background-color: #ffeded;
+                                  border-radius: 3px;
+                                  border-color: #ff4949;
+                                "
+                              >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding: 8px 0">
+                          <div
+                            class="sib-select sib-form-block"
+                            data-required="true"
+                          >
+                            <div class="form__entry entry_block">
+                              <div class="form__label-row">
+                                <label
+                                  class="entry__label"
+                                  style="
+                                    font-weight: 500;
+                                    text-align: left;
+                                    font-size: 16px;
+                                    text-align: left;
+                                    font-family: Futura, sans-serif;
+                                    color: #33bfa7;
+                                  "
+                                  for="SUJET"
+                                  data-required="*"
+                                  >Par quoi souhaitez-vous commencer ?</label
+                                >
+                                <div class="entry__field">
+                                  <select
+                                    class="input"
+                                    id="SUJET"
+                                    name="SUJET"
+                                    data-required="true"
+                                  >
+                                    <option value="" disabled selected hidden>
+                                      Choisissez votre besoin
+                                    </option>
+
+                                    <option class="sib-menu__item" value="1">
+                                      Créer un site
+                                    </option>
+                                    <option class="sib-menu__item" value="6">
+                                      Moderniser mon site
+                                    </option>
+                                    <option class="sib-menu__item" value="7">
+                                      Améliorer ma visibilité
+                                    </option>
+                                    <option class="sib-menu__item" value="8">
+                                      En discuter, je ne sais pas encore
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                              <label
+                                class="entry__error entry__error--primary"
+                                style="
+                                  font-size: 16px;
+                                  text-align: left;
+                                  font-family: Helvetica, sans-serif;
+                                  color: #661d1d;
+                                  background-color: #ffeded;
+                                  border-radius: 3px;
+                                  border-color: #ff4949;
+                                "
+                              >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding: 8px 0">
+                          <div class="sib-input sib-form-block">
+                            <div class="form__entry entry_block">
+                              <div class="form__label-row">
+                                <div class="entry__field">
+                                  <textarea
+                                    rows="2"
+                                    class="input"
+                                    maxlength="500"
+                                    id="MESSAGE"
+                                    name="MESSAGE"
+                                    autocomplete="off"
+                                    placeholder="Message"
+                                  ></textarea>
+                                </div>
+                              </div>
+
+                              <label
+                                class="entry__error entry__error--primary"
+                                style="
+                                  font-size: 16px;
+                                  text-align: left;
+                                  font-family: Helvetica, sans-serif;
+                                  color: #661d1d;
+                                  background-color: #ffeded;
+                                  border-radius: 3px;
+                                  border-color: #ff4949;
+                                "
+                              >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding: 8px 0">
+                          <div
+                            class="sib-form-block"
+                            style="text-align: center"
+                          >
+                            <button
+                              class="sib-form-block__button sib-form-block__button-with-loader"
+                              style="
+                                font-size: 16px;
+                                text-align: center;
+                                font-weight: 700;
+                                font-family: 'Trebuchet MS', sans-serif;
+                                color: #ffffff;
+                                background-color: #33bfa7;
+                                border-radius: 20px;
+                                border-width: 0px;
+                              "
+                              form="sib-form"
+                              type="submit"
+                            >
+                              <svg
+                                class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                viewBox="0 0 512 512"
+                                style=""
+                              >
+                                <path
+                                  d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+                                />
+                              </svg>
+                              Envoyer
+                            </button>
+                          </div>
+                        </div>
+
+                        <input
+                          type="text"
+                          name="email_address_check"
+                          value=""
+                          class="input--hidden"
+                        />
+                        <input type="hidden" name="locale" value="fr" />
+                      </form>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-                <div class="entry__field">
-                  <input class="input " maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="off" placeholder="Prénom*" data-required="true" required />
-                </div>
-              </div>
-
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-                <div class="entry__field">
-                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email*" data-required="true" required />
-                </div>
-              </div>
-
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-                <div class="entry__field">
-                  <input maxlength="200" type="text" data-numeric="true" class="input " id="TELEPHONE" name="TELEPHONE" autocomplete="off" placeholder="Téléphone" />
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-select sib-form-block" data-required="true">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-                <label class="entry__label" style="font-weight: 500; text-align:left; font-size:16px; text-align:left; font-family:Futura, sans-serif; color:#33bfa7;" for="SUJET" data-required="*">Par quoi souhaitez-vous commencer ?</label>
-                <div class="entry__field">
-                  <select class="input" id="SUJET" name="SUJET" data-required="true">
-                     <option value="" disabled selected hidden>Choisissez votre besoin</option>
-
-                    <option class="sib-menu__item" value="1">
-                      Créer un site
-                    </option>
-                    <option class="sib-menu__item" value="6">
-                      Moderniser mon site
-                    </option>
-                    <option class="sib-menu__item" value="7">
-                      Améliorer ma visibilité
-                    </option>
-                    <option class="sib-menu__item" value="8">
-                      En discuter, je ne sais pas encore
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-                <div class="entry__field">
-                  <textarea rows="2" class="input " maxlength="500" id="MESSAGE" name="MESSAGE" autocomplete="off" placeholder="Message"></textarea>
-                </div>
-              </div>
-
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="text-align: center">
-            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Trebuchet MS&quot;, sans-serif; color:#FFFFFF; background-color:#33bfa7; border-radius:20px; border-width:0px;" form="sib-form" type="submit">
-              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" style="">
-                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-              </svg>
-              Envoyer
-            </button>
-          </div>
-        </div>
-
-        <input type="text" name="email_address_check" value="" class="input--hidden">
-        <input type="hidden" name="locale" value="fr">
-      </form>
-    </div>
-  </div>
-</div>
-<!-- END - We recommend to place the above code where you want the form in your website html  -->
-
-<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
-  window.LOCALE = 'fr';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Certaines informations semblent incorrectes. Merci de vérifier les champs puis de réessayer.";
-
-  window.REQUIRED_ERROR_MESSAGE = "Merci de renseigner ce champ. ";
-
-  window.GENERIC_INVALID_MESSAGE = "Certaines informations semblent incorrectes. Merci de vérifier les champs puis de réessayer.";
-
-  window.INVALID_NUMBER = "Certaines informations semblent incorrectes. Merci de vérifier les champs puis de réessayer.";
-
-
-
-  window.translation = {
-    common: {
-      selectedList: '{quantity} liste sélectionnée',
-      selectedLists: '{quantity} listes sélectionnées',
-      selectedOption: '{quantity} sélectionné',
-      selectedOptions: '{quantity} sélectionnés',
-    }
-  };
-
-  var AUTOHIDE = Boolean(0);
-</script>
-
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-
-<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-<!-- End Brevo Form -->
+                <!-- END - We recommend to place the above code where you want the form in your website html  -->
+                <!-- End Brevo Form -->
               </div>
             </div>
 
@@ -783,5 +1014,39 @@
     <!--scripts-->
     <script src="js/includes.js" defer></script>
     <script src="js/main.js" defer></script>
+
+    <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+    <script>
+      window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays'
+      window.LOCALE = 'fr'
+      window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
+        'Certaines informations semblent incorrectes. Merci de vérifier les champs puis de réessayer.'
+
+      window.REQUIRED_ERROR_MESSAGE = 'Merci de renseigner ce champ. '
+
+      window.GENERIC_INVALID_MESSAGE =
+        'Certaines informations semblent incorrectes. Merci de vérifier les champs puis de réessayer.'
+
+      window.INVALID_NUMBER =
+        'Certaines informations semblent incorrectes. Merci de vérifier les champs puis de réessayer.'
+
+      window.translation = {
+        common: {
+          selectedList: '{quantity} liste sélectionnée',
+          selectedLists: '{quantity} listes sélectionnées',
+          selectedOption: '{quantity} sélectionné',
+          selectedOptions: '{quantity} sélectionnés',
+        },
+      }
+
+      var AUTOHIDE = Boolean(0)
+    </script>
+
+    <script
+      defer
+      src="https://sibforms.com/forms/end-form/build/main.js"
+    ></script>
+
+    <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
   </body>
 </html>

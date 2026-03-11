@@ -1,5 +1,5 @@
 /* =========================
-   PROJECT STUDY — LOUISE
+       PROJECT
    ========================= */
 
 :root {
@@ -59,7 +59,7 @@
 }
 
 .project-section h2::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -188,7 +188,7 @@
 }
 
 .carousel-title::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -201,7 +201,6 @@
     rgba(123, 225, 206, 0.45) 100%
   );
 }
-
 
 .carousel-viewport {
   overflow-x: auto;
@@ -252,11 +251,6 @@
   transform: translateY(-2px);
 }
 
-
-
-
-
-
 /* =========================
    GRID 2 COLONNES
    ========================= */
@@ -282,9 +276,6 @@
   margin-bottom: 14px;
   line-height: 1.6;
 }
-
-
-
 
 /* =========================
    QUOTE
@@ -330,7 +321,7 @@
    ========================= */
 
 .project-images {
- display: grid;
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   max-width: 980px;
@@ -355,7 +346,7 @@
   }
 
   .project-images img {
-    max-width: 140px;
+    max-width: 120px;
   }
 }
 
@@ -367,7 +358,7 @@
 
   .project-images img {
     width: 100%;
-    max-width: 280px;
+    max-width: 220px;
     margin: 0 auto;
   }
 }
@@ -431,7 +422,7 @@
   .project-carousel,
   .project-quote-section,
   .project-cta {
-    padding: 70px 0;
+    padding: 56px 0;
   }
 
   .project-grid-2 {
@@ -449,12 +440,20 @@
 }
 
 @media (max-width: 768px) {
+  
+.project-section,
+.project-carousel,
+.project-quote-section,
+.project-cta {
+  padding: 42px 0;
+}
+
   .project-hero {
     height: 360px;
   }
 
   .project-hero-content {
-     padding: 36px 20px;
+    padding: 36px 20px;
   }
 
   .project h1 {
@@ -464,21 +463,20 @@
   .project-intro {
     font-size: 16px;
   }
-  
 
   .carousel-viewport {
     padding: 0 14px;
-     overflow-x: auto;
+    overflow-x: auto;
   }
 
   .carousel-track {
     display: flex;
-  gap: 40px;
+    gap: 40px;
   }
 
   .carousel-track img {
-   flex: 0 0 52%;
-  width: 100%;
+    flex: 0 0 52%;
+    width: 100%;
   }
 
   .project-pagespeed-grid {
@@ -488,25 +486,32 @@
 
   .project-quote {
     font-size: 22px;
+    line-height: 1.35;
+    padding: 0 14px;
   }
 
   .project-quote::before {
-    top: -18px;
-    left: -14px;
-    font-size: 56px;
+    top: -10px;
+    left: -6px;
+    font-size: 46px;
   }
 
   .project-quote::after {
-    right: -12px;
-    bottom: -30px;
-    font-size: 56px;
+    right: -4px;
+    bottom: -12px;
+    font-size: 46px;
   }
 }
 
 @media (max-width: 540px) {
+  .project-section,
+  .project-carousel,
+  .project-quote-section,
+  .project-cta {
+    padding: 34px 0;
+  }
+
   .carousel-track img {
     flex: 0 0 92%;
   }
 }
-
-
