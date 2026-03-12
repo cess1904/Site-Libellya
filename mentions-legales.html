@@ -1,125 +1,35 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- Encodage et responsive -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO principal -->
-    <title>Mentions légales | Libellya</title>
+  <title>Mentions légales | Libellya</title>
+  <meta
+    name="description"
+    content="Mentions légales du site Libellya : éditeur du site, hébergement, propriété intellectuelle et informations relatives aux données personnelles."
+  />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="https://libellya.fr/mentions-legales.html" />
 
-    <meta
-      name="description"
-      content="Mentions légales du site Libellya : informations sur l’éditeur du site, l’hébergement, la propriété intellectuelle et la gestion des données personnelles."
-    />
+  <meta name="author" content="Libellya" />
+  <meta name="theme-color" content="#33bfa7" />
 
-    <meta name="robots" content="index,follow" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Libellya" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="canonical" href="https://libellya.fr/mentions-legales" />
-
-    <!-- Auteur -->
-    <meta name="author" content="Libellya" />
-
-    <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mentions légales | Libellya" />
-    <meta
-      property="og:description"
-      content="Informations légales relatives au site Libellya : éditeur, hébergement, données personnelles et responsabilité."
-    />
-    <meta property="og:url" content="https://libellya.fr/mentions-legales" />
-    <meta property="og:site_name" content="Libellya" />
-    <meta
-      property="og:image"
-      content="https://libellya.fr/images/og-image.jpg"
-    />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mentions légales | Libellya" />
-    <meta
-      name="twitter:description"
-      content="Informations légales du site Libellya."
-    />
-    <meta
-      name="twitter:image"
-      content="https://libellya.fr/images/og-image.jpg"
-    />
-
-    <!-- Couleur navigateur mobile -->
-    <meta name="theme-color" content="#33bfa7" />
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <!-- Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Fonts (si tu utilises Google Fonts) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://libellya.fr/#business",
-        "name": "Libellya",
-        "url": "https://libellya.fr",
-        "logo": "https://libellya.fr/images/logo-libellya.png",
-        "image": "https://libellya.fr/images/og-image.jpg",
-        "description": "Création de sites internet performants et optimisés SEO pour indépendants, artisans et petites entreprises.",
-
-        "founder": {
-          "@type": "Person",
-          "name": "Cécilia"
-        },
-
-        "areaServed": [
-          {
-            "@type": "AdministrativeArea",
-            "name": "Alsace"
-          },
-          {
-            "@type": "AdministrativeArea",
-            "name": "Bas-Rhin"
-          },
-          {
-            "@type": "AdministrativeArea",
-            "name": "Haut-Rhin"
-          },
-          {
-            "@type": "City",
-            "name": "Strasbourg"
-          },
-          {
-            "@type": "City",
-            "name": "Colmar"
-          }
-        ],
-
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer service",
-          "email": "hello@libellya.fr",
-          "availableLanguage": ["French"]
-        },
-
-        "sameAs": ["https://www.instagram.com/libellyaweb"]
-      }
-    </script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/mentions-legales.css" />
-  </head>
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/mentions-legales.css" />
+</head>
   
   <body>
     <!--include "components/header.html"-->
     <a class="skip-link" href="#main">Aller au contenu</a>
-    <div class="site-header" data-include="components/header.html"></div>
+    <div class="site-header" data-include="/components/header.html"></div>
 
     <!-- MAIN -->
     <main id="main">
@@ -281,7 +191,7 @@
     </main>
 
     <!--include "components/footer.html"-->
-    <div data-include="components/footer.html"></div>
+    <div data-include="/components/footer.html"></div>
 
     <!--scripts-->
     <script src="js/includes.js" defer></script>
